@@ -9,7 +9,7 @@ export function SignInButton() {
   return (
     <Button
       variant="outline"
-      onClick={() => openSignIn()}
+      onClick={() => openSignIn({ redirectUrl: '/dashboard' })}
       className="px-6 py-2"
     >
       Sign in
@@ -22,7 +22,7 @@ export function SignUpButton() {
 
   return (
     <Button
-      onClick={() => openSignUp()}
+      onClick={() => openSignUp({ redirectUrl: '/dashboard' })}
       className="bg-blue-600 px-6 py-2 hover:bg-blue-700"
     >
       Get Started
